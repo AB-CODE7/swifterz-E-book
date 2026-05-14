@@ -64,8 +64,8 @@ const ChapterTwo: React.FC = () => {
                 </div>
               )}
 
-              <div className="w-full max-w-[280px] lg:max-w-[320px] text-left">
-                <h3 className="text-[#1F2937] font-sora font-bold text-lg lg:text-xl mb-1">
+              <div className="w-full max-w-[320px] lg:max-w-[400px] text-left overflow-hidden">
+                <h3 className="text-[#1F2937] font-sora font-bold text-sm md:text-base lg:text-md mb-1 whitespace-nowrap">
                   {point.title}
                 </h3>
                 <p className="text-[#4B5563] font-inter text-sm lg:text-[15px] leading-relaxed">
