@@ -83,7 +83,7 @@ const FinalInsight: React.FC = () => {
             </div>
 
             <div className="pt-16 pb-1">
-              <button className="bg-[#926B15] text-white px-14 py-4 rounded-md font-sora font-bold text-xl transition-all shadow-md hover:shadow-lg">
+              <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold text-md transition-all shadow-md hover:shadow-lg">
                 Book A Consultation For FREE
               </button>
             </div>

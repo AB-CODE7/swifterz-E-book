@@ -44,7 +44,7 @@ const ChapterTwo: React.FC = () => {
         transition={{ duration: 0.8 }}
         className="w-full max-w-6xl"
       >
-        <h2 className="text-[#1F2937] font-sora font-bold text-xl md:text-2xl lg:text-3xl mb-8 lg:mb-12">
+        <h2 className="text-[#1F2937] font-sora font-bold text-xl md:text-2xl lg:text-2xl mb-8 lg:mb-12">
           Chapter 2: Where Most Infrastructure Projects Go Wrong
         </h2>
 
@@ -91,13 +91,13 @@ const ChapterTwo: React.FC = () => {
           className="flex flex-col sm:flex-row items-center justify-between gap-8 py-6 mt-4 border-t border-gray-50"
         >
           <div className="flex items-center gap-4 flex-1">
-            <img src={CustomerServiceIcon} alt="Customer Service" className="w-12 h-12 shrink-0 object-contain" />
-            <p className="text-lg md:text-xl font-sora font-bold text-[#1F2937] leading-tight">
-              Get Expert Insights on Your <br /> Current Execution Strategy
+            <img src={CustomerServiceIcon} alt="Customer Service" className="w-14 h-14 shrink-0 object-contain ml-6" />
+            <p className="text-lg md:text-lg font-sora font-bold text-[#1F2937] leading-tight ml-6">
+              Get Expert Insights on Your Current <br /> Execution Strategy
             </p>
           </div>
 
-          <button className="bg-[#926B15] text-white px-16 py-4 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
+          <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
             Consult For FREE
           </button>
         </motion.div>

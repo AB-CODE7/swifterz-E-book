@@ -47,7 +47,7 @@ const ChapterThree: React.FC = () => {
         transition={{ duration: 0.8 }}
         className="w-full max-w-4xl space-y-4"
       >
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-sora font-bold text-[#1F2937]">
+        <h2 className="text-xl md:text-2xl lg:text-2xl font-sora font-bold text-[#1F2937]">
           Chapter 3: BIM — From Design Tool to Decision Engine
         </h2>
 
@@ -66,7 +66,7 @@ const ChapterThree: React.FC = () => {
 
         <div className="space-y-3 lg:space-y-4">
           {bimCapabilities.map((item, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -88,9 +88,9 @@ const ChapterThree: React.FC = () => {
             </motion.div>
           ))}
         </div>
-        
+
         {/* CTA Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -98,13 +98,13 @@ const ChapterThree: React.FC = () => {
           className="flex flex-col sm:flex-row items-center justify-between gap-8 py-6 mt-4 border-t border-gray-50"
         >
           <div className="flex items-center gap-4 flex-1">
-            <img src={CustomerServiceIcon} alt="Customer Service" className="w-12 h-12 shrink-0 object-contain" />
-            <p className="text-lg md:text-xl font-sora font-bold text-[#1F2937] leading-tight">
+            <img src={CustomerServiceIcon} alt="Customer Service" className="w-14 h-14 shrink-0 object-contain ml-6" />
+            <p className="text-lg md:text-lg font-sora font-bold text-[#1F2937] leading-tight ml-6">
               Discuss BIM Implementation for <br /> Your Project Lifecycle
             </p>
           </div>
-          
-          <button className="bg-[#926B15] text-white px-16 py-4 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
+
+          <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
             Consult For FREE
           </button>
         </motion.div>

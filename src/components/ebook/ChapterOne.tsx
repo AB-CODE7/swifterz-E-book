@@ -52,8 +52,8 @@ const ChapterOne: React.FC = () => {
         transition={{ duration: 0.8 }}
         className="w-full max-w-4xl space-y-4"
       >
-        <h2 className="text-lg md:text-xl lg:text-3xl font-sora font-bold text-[#1F2937]">
-          Chapter 1: Why Projects Like the Gold Line Are High-Risk by Design
+        <h2 className="text-lg md:text-xl lg:text-2xl font-sora font-bold text-[#1F2937]">
+          Chapter 1: Why Projects Like the Gold Line Are High-<br></br>Risk by Design
         </h2>
 
         <p className="text-[#4B5563] font-inter text-base mb-6">
@@ -99,7 +99,7 @@ const ChapterOne: React.FC = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className="text-[#353535] font-sora italic text-lg lg:text-xl pt2 border-t border-gray-50"
+          className="text-[#353535] font-sora italic text-md lg:text-md pt-1 border-t border-gray-50"
         >
           These risks don’t appear suddenly—they accumulate silently.
         </motion.p>
@@ -113,13 +113,13 @@ const ChapterOne: React.FC = () => {
           className="flex flex-col sm:flex-row items-center justify-between gap-8 py-6 mt-4 border-t border-gray-50"
         >
           <div className="flex items-center gap-4 flex-1">
-            <img src={CustomerServiceIcon} alt="Customer Service" className="w-12 h-12 shrink-0 object-contain" />
-            <p className="text-lg md:text-xl font-sora font-bold text-[#1F2937] leading-tight">
-              Review Your Project’s <br /> Coordination Challenges
+            <img src={CustomerServiceIcon} alt="Customer Service" className="w-14 h-14 shrink-0 object-contain ml-6" />
+            <p className="text-lg md:text-lg font-sora font-bold text-[#1F2937] leading-tight ml-6">
+              Review Your Project’s Coordination <br /> Challenges
             </p>
           </div>
 
-          <button className="bg-[#926B15] text-white px-16 py-4 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
+          <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
             Consult For FREE
           </button>
         </motion.div>

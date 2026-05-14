@@ -28,7 +28,7 @@ const ChapterSix: React.FC = () => {
         transition={{ duration: 0.8 }}
         className="w-full max-w-5xl"
       >
-        <h2 className="text-[#1F2937] font-sora font-bold text-xl md:text-2xl lg:text-3xl mb-4">
+        <h2 className="text-[#1F2937] font-sora font-bold text-xl md:text-2xl lg:text-2xl mb-4">
           Chapter 6: The Cost of Not Using BIM
         </h2>
         <p className="text-[#4B5563] font-inter text-base mb-12">
@@ -48,12 +48,12 @@ const ChapterSix: React.FC = () => {
               <div className="relative w-full h-12 md:h-14 mb-8">
                 {/* Tab/Box Shape */}
                 <div className="absolute inset-0 border-[1.5px] border-gray-200 rounded-xl md:rounded-2xl bg-white"></div>
-                
+
                 {/* Empty Circle Indicator */}
                 <div className="absolute -top-7 md:-top-8 left-1/2 -translate-x-1/2 w-14 h-14 md:w-16 md:h-16 rounded-full bg-white border-[4px] md:border-[5px] border-gray-300 z-10">
                 </div>
               </div>
-              
+
               {/* Text Content Below Box */}
               <p className="text-[#1F2937] font-sora font-bold text-center text-sm md:text-base lg:text-lg leading-[1.3] max-w-[220px]">
                 {item.title}
@@ -73,7 +73,7 @@ const ChapterSix: React.FC = () => {
         </motion.p>
 
         {/* CTA Section */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -81,13 +81,13 @@ const ChapterSix: React.FC = () => {
           className="flex flex-col sm:flex-row items-center justify-between gap-8 py-6 mt-4 border-t border-gray-50"
         >
           <div className="flex items-center gap-4 flex-1">
-            <img src={CustomerServiceIcon} alt="Customer Service" className="w-12 h-12 shrink-0 object-contain" />
-            <p className="text-lg md:text-xl font-sora font-bold text-[#1F2937] leading-tight">
+            <img src={CustomerServiceIcon} alt="Customer Service" className="w-14 h-14 shrink-0 object-contain ml-6" />
+            <p className="text-lg md:text-lg font-sora font-bold text-[#1F2937] leading-tight ml-6">
               Understand the Cost Impact <br /> on Your Project
             </p>
           </div>
-          
-          <button className="bg-[#926B15] text-white px-16 py-4 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
+
+          <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
             Consult For FREE
           </button>
         </motion.div>
