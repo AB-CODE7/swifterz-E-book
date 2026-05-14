@@ -6,7 +6,7 @@ import BimStrategiesImg from '../../assets/bimstratergies.jpg';
 
 const BimStrategies: React.FC = () => {
   return (
-    <section className="bg-white py-12 px-8 lg:px-12">
+    <section className="bg-white py-0 px-8 lg:px-12 mb-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ const BimStrategies: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="rounded-none overflow-hidden shadow-lg border border-gray-100 aspect-[21/8] w-full"
+          className="rounded-md overflow-hidden shadow-lg border border-gray-100 aspect-[21/8] w-full"
         >
           <img
             src={BimStrategiesImg}

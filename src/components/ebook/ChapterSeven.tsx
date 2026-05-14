@@ -17,7 +17,7 @@ const benchmarks = [
 
 const ChapterSeven: React.FC = () => {
   return (
-    <section className="bg-white py-0 px-8 lg:px-12 lg:mb-[-80px] lg:mt-[-120px]">
+    <section className="bg-white py-0 px-8 lg:px-12 mb-6">
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}

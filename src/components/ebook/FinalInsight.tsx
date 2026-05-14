@@ -18,7 +18,7 @@ const FinalInsight: React.FC = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2 }}
-          className="rounded-none overflow-hidden shadow-sm border border-gray-100 aspect-[21/8] w-full max-w-6xl mx-auto"
+          className="rounded-md overflow-hidden shadow-sm border border-gray-100 aspect-[21/8] w-full max-w-6xl mx-auto"
         >
           <img
             src={HeroImg}

@@ -13,7 +13,7 @@ const deliverables = [
 const ChapterEight: React.FC = () => {
   return (
     <>
-    <section className="bg-white pt-12 pb-10 px-8 lg:px-16 lg:mt-[-40px]">
+    <section className="bg-white py-0 px-8 lg:px-12 mb-6">
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}

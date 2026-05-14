@@ -5,7 +5,7 @@ import HeadsetImg from '../../assets/headset.jpeg';
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-white py-12 px-8 lg:px-12 flex flex-col items-center">
+    <section className="bg-white py-0 px-8 lg:px-12 flex flex-col items-center">
       <div className="w-full max-w-4xl space-y-6">
 
         {/* Main Hero Image */}
@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="rounded-none overflow-hidden shadow-lg border border-gray-100 aspect-[21/8] w-full max-w-3xl ml-0"
+          className="rounded-md overflow-hidden shadow-lg border border-gray-100 aspect-[21/8] w-full max-w-3xl ml-0"
         >
           <img
             src={HeroImage}
