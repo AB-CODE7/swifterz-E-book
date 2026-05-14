@@ -83,8 +83,8 @@ const ChapterOne: React.FC = () => {
                 </h3>
                 <ul className="space-y-0.5">
                   {risk.points.map((point, idx) => (
-                    <li key={idx} className="text-[#4B5563] font-inter text-sm lg:text-[15px] flex items-center gap-2">
-                      <span className="w-1 h-1 rounded-full bg-gray-400" />
+                    <li key={idx} className="text-[#000000] font-inter text-sm lg:text-[15px] flex items-center gap-2">
+                      <span className="w-1 h-1 rounded-full bg-[#000000]" />
                       {point}
                     </li>
                   ))}

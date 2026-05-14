@@ -29,7 +29,7 @@ const TableOfContents: React.FC<TableOfContentsProps> = ({ activeChapterId }) =>
         <img src={logo} alt="Swifterz Logo" className="h-20 w-auto opacity-140 ml-[-20px]" />
       </div>
 
-      <h3 className="text-[#1F2937] font-inter text-lg font-bold mb-6 mt-4 uppercase tracking-wider">
+      <h3 className="text-[#1F2937] font-inter text-lg font-bold mb-6 mt-4 tracking-wider">
         In this Ebook
       </h3>
 
