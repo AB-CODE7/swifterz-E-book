@@ -1,20 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import CustomerServiceIcon from '../../assets/customer-service.svg';
+import Icon1 from '../../assets/chap 6.png';
+import Icon2 from '../../assets/chap 6 (2).png';
+import Icon3 from '../../assets/chap 6 (3).png';
+import Icon4 from '../../assets/chP 6 (4).png';
+
 
 
 const costs = [
   {
-    title: '30-40% increase in material waste'
+    title: '30-40% increase in material waste',
+    icon: Icon1
   },
   {
-    title: 'Significant project delays'
+    title: 'Significant project delays',
+    icon: Icon2
   },
   {
-    title: 'Escalating costs due to rework'
+    title: 'Escalating costs due to rework',
+    icon: Icon3
   },
   {
-    title: 'Increased operational risks'
+    title: 'Increased operational risks',
+    icon: Icon4
   }
 ];
 
@@ -35,7 +44,7 @@ const ChapterSix: React.FC = () => {
           Without BIM, projects face:
         </p>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-20 lg:gap-x-14 mb-24 mt-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-16 lg:gap-x-10 mb-16 mt-12">
           {costs.map((item, index) => (
             <motion.div
               key={index}
@@ -45,17 +54,27 @@ const ChapterSix: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               className="flex flex-col items-center"
             >
+<<<<<<< HEAD
               <div className="relative w-full h-12 md:h-14 mb-8">
                 {/* Tab/Box Shape */}
                 <div className="absolute inset-0 border-[1.5px] border-gray-200 rounded-xl md:rounded-2xl bg-white"></div>
 
                 {/* Empty Circle Indicator */}
                 <div className="absolute -top-7 md:-top-8 left-1/2 -translate-x-1/2 w-14 h-14 md:w-16 md:h-16 rounded-full bg-white border-[4px] md:border-[5px] border-gray-300 z-10">
+=======
+              <div className="relative w-full h-10 md:h-10 mb-6">
+                {/* Box with Border (Rounded top, sharp bottom) */}
+                <div className="absolute inset-0 border-[3px] border-[#E5E7EB] rounded-t-md md:rounded-t-xl rounded-b-none bg-white"></div>
+
+                {/* Icon sitting on top border */}
+                <div className="absolute -top-5 md:-top-6 left-1/2 -translate-x-1/2 bg-white px-2 md:px-3 z-10">
+                  <img src={item.icon} alt={item.title} className="w-8 h-8 md:w-10 md:h-10 object-contain" />
+>>>>>>> ad84e18fff4d34c13e7731e4204a793d10dc289a
                 </div>
               </div>
 
               {/* Text Content Below Box */}
-              <p className="text-[#1F2937] font-sora font-bold text-center text-sm md:text-base lg:text-lg leading-[1.3] max-w-[220px]">
+              <p className="text-[#1F2937] font-sora font-bold text-center text-xs md:text-sm lg:text-base leading-[1.3] max-w-[180px]">
                 {item.title}
               </p>
             </motion.div>
@@ -87,9 +106,17 @@ const ChapterSix: React.FC = () => {
             </p>
           </div>
 
+<<<<<<< HEAD
           <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
             Consult For FREE
           </button>
+=======
+          <a href="https://swifterz.ae/book-a-consultation" target="_blank" rel="noopener noreferrer">
+            <button className="bg-[#926B15] text-white px-16 py-4 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
+              Consult For FREE
+            </button>
+          </a>
+>>>>>>> ad84e18fff4d34c13e7731e4204a793d10dc289a
         </motion.div>
       </motion.div>
     </section>

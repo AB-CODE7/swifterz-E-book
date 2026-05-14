@@ -104,10 +104,12 @@ const ChapterFour: React.FC = () => {
               Walk Through Your Project <br /> Scenarios with Our Experts
             </p>
           </div>
-
-          <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
-            Consult For FREE
-          </button>
+          
+          <a href="https://swifterz.ae/book-a-consultation" target="_blank" rel="noopener noreferrer">
+            <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
+              Consult For FREE
+            </button>
+          </a>
         </motion.div>
       </motion.div>
     </section>
