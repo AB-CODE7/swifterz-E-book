@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Headset } from 'lucide-react';
+import CustomerServiceIcon from '../../assets/customer-service.svg';
+
 import Chap1Img from '../../assets/chap 1.png';
 import StakeImg from '../../assets/chap1stake.png';
 import TimeImg from '../../assets/chap1time compressed.png';
@@ -112,7 +113,7 @@ const ChapterOne: React.FC = () => {
           className="flex flex-col sm:flex-row items-center justify-between gap-8 py-6 mt-4 border-t border-gray-50"
         >
           <div className="flex items-center gap-4 flex-1">
-            <Headset className="w-12 h-12 text-[#926B15] shrink-0" />
+            <img src={CustomerServiceIcon} alt="Customer Service" className="w-12 h-12 shrink-0 object-contain" />
             <p className="text-lg md:text-xl font-sora font-bold text-[#1F2937] leading-tight">
               Review Your Project’s <br /> Coordination Challenges
             </p>
