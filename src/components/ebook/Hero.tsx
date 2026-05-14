@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import HeroImage from '../../assets/hero.img.png';
-import HeadsetImg from '../../assets/headset.jpeg';
+import CustomerServiceIcon from '../../assets/customer-service.svg';
 
 const Hero: React.FC = () => {
   return (
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
             className="flex flex-col sm:flex-row items-center justify-between gap-8 py-6 mt-4 border-t border-gray-50"
           >
             <div className="flex items-center gap-4 flex-1">
-              <img src={HeadsetImg} alt="Headset" className="w-12 h-12 shrink-0 object-contain mix-blend-multiply" />
+              <img src={CustomerServiceIcon} alt="Customer Service" className="w-12 h-12 shrink-0 object-contain" />
               <p className="text-lg md:text-xl font-sora font-bold text-[#1F2937] leading-tight">
                 Get a Professional Assessment of <br /> Your Project Risks
               </p>

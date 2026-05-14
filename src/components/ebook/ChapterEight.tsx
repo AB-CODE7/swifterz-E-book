@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Check, Headset } from 'lucide-react';
+import CustomerServiceIcon from '../../assets/customer-service.svg';
+import CheckMarkIcon from '../../assets/check-mark.svg';
 import mdImg from '../../assets/EbookImg/MDimg.jpg';
 
 const deliverables = [
@@ -45,7 +46,7 @@ const ChapterEight: React.FC = () => {
               className="flex items-center gap-4"
             >
               <div className="flex-shrink-0">
-                <Check className="w-6 h-6 text-black stroke-[3px]" />
+                <img src={CheckMarkIcon} alt="check" className="w-6 h-6 object-contain" />
               </div>
               <span className="text-[#1F2937] font-inter font-semibold text-sm md:text-base lg:text-lg">
                 {item}
@@ -90,7 +91,7 @@ const ChapterEight: React.FC = () => {
           className="flex flex-col sm:flex-row items-center justify-between gap-8 py-6 mt-4 border-t border-gray-50 max-w-4xl mx-auto px-8"
         >
           <div className="flex items-center gap-4 flex-1">
-            <Headset className="w-12 h-12 text-[#926B15] shrink-0" />
+            <img src={CustomerServiceIcon} alt="Customer Service" className="w-12 h-12 shrink-0 object-contain" />
             <p className="text-lg md:text-xl font-sora font-bold text-[#1F2937] leading-tight">
               Start Your Project Coordination <br /> with Swifterz
             </p>
