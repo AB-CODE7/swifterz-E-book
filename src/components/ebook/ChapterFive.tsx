@@ -86,7 +86,7 @@ const ChapterFive: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-between gap-8 py-6 mt-4 border-t border-gray-50"
+          className="flex flex-col sm:flex-row items-center justify-between gap-8 py-4 mt-4 border-t border-gray-50"
         >
           <div className="flex items-center gap-4 flex-1">
             <img src={CustomerServiceIcon} alt="Customer Service" className="w-14 h-14 shrink-0 object-contain ml-6" />

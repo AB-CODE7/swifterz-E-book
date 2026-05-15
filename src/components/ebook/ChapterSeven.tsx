@@ -4,21 +4,29 @@ import { motion } from 'framer-motion';
 import CustomerServiceIcon from '../../assets/customer-service.svg';
 
 
+import FullyDigitalIcon from '../../assets/chap 7.png';
+import IntegratedProjectIcon from '../../assets/chap 7 integrated project.jpg';
+import DataDrivenIcon from '../../assets/chap7 decision making.png';
+
+
 const benchmarks = [
   {
-    title: <>Fully digital <br /> planning</>
+    title: <>Fully digital <br /> planning</>,
+    icon: FullyDigitalIcon
   },
   {
-    title: 'Integrated project delivery'
+    title: 'Integrated project delivery',
+    icon: IntegratedProjectIcon
   },
   {
-    title: <>Data-driven <br /> decision-making</>
+    title: <>Data-driven <br /> decision-making</>,
+    icon: DataDrivenIcon
   }
 ];
 
 const ChapterSeven: React.FC = () => {
   return (
-    <section className="bg-white py-0 px-8 lg:px-12 mb-6">
+    <section className="bg-white py-0 px-8 lg:px-12">
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -43,7 +51,13 @@ const ChapterSeven: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               className="group"
             >
-              <div className="aspect-[16/9] bg-[#F3F4F6] rounded-sm mb-4 transition-colors duration-300" />
+              <div className="aspect-[16/9] bg-[#F3F4F6] rounded-sm mb-4 overflow-hidden">
+                <img
+                  src={item.icon}
+                  alt={typeof item.title === 'string' ? item.title : 'Benchmark'}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
               <p className="text-[#1F2937] font-sora font-semibold text-center text-[15px] leading-snug max-w-[180px] mx-auto">
                 {item.title}
               </p>
@@ -72,14 +86,14 @@ const ChapterSeven: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-between gap-8 py-6 mt-4 border-t border-gray-50"
+          className="flex flex-col sm:flex-row items-center justify-between gap-6 py-4 mt-4 border-t border-gray-50"
         >
-          <div className="flex items-center gap-4 flex-1">
-            <img src={CustomerServiceIcon} alt="Customer Service" className="w-14 h-14 shrink-0 object-contain ml-6" />
-            <p className="text-lg md:text-lg font-sora font-bold text-[#1F2937] leading-tight ml-6">
-              Future-Proof Your Project with BIM Strategy
-            </p>
-          </div>
+          <img src={CustomerServiceIcon} alt="Customer Service" className="w-14 h-14 shrink-0 object-contain" />
+          
+          <p className="text-lg md:text-lg font-sora font-bold text-[#1F2937] leading-tight text-center flex-1 px-4">
+            Future-Proof Your Project with BIM Strategy
+          </p>
+
           <a href="https://swifterz.ae/book-a-consultation" target="_blank" rel="noopener noreferrer">
             <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
               Consult For FREE

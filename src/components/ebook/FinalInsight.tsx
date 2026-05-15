@@ -4,7 +4,7 @@ import HeroImg from '../../assets/hero.img.png';
 
 const FinalInsight: React.FC = () => {
   return (
-    <section className="bg-white py-2 px-8 lg:px-12 flex flex-col items-center">
+    <section className="bg-white py-0 px-8 lg:px-12 flex flex-col items-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ const FinalInsight: React.FC = () => {
           </motion.div>
 
           {/* Final CTA Area */}
-          <div className="space-y-1 pt-12 w-full">
+          <div className="space-y-1 pt-8 w-full">
             <div className="space-y-0 max-w-4xl mx-auto">
               <h3 className="text-lg md:text-1xl font-sora  text-[#1F2937] leading-tight">
                 Planning a complex infrastructure project in the UAE?
@@ -82,7 +82,7 @@ const FinalInsight: React.FC = () => {
               </div>
             </div>
 
-            <div className="pt-16 pb-1">
+            <div className="pt-10 pb-1">
               <a href="https://swifterz.ae/book-a-consultation" target="_blank" rel="noopener noreferrer">
                 <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold text-md transition-all shadow-md hover:shadow-lg">
                   Book A Consultation For FREE

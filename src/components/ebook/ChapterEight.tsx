@@ -14,7 +14,7 @@ const deliverables = [
 const ChapterEight: React.FC = () => {
   return (
     <>
-      <section className="bg-white py-0 px-8 lg:px-12 mb-6">
+      <section className="bg-white py-0 px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -88,15 +88,14 @@ const ChapterEight: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-between gap-8 py-6 mt-4 border-t border-gray-50 max-w-4xl mx-auto px-8"
+          className="flex flex-col sm:flex-row items-center justify-between gap-6 py-4 mt-4 border-t border-gray-50 max-w-4xl mx-auto px-8"
         >
-          <div className="flex items-center gap-4 flex-1">
-            <img src={CustomerServiceIcon} alt="Customer Service" className="w-14 h-14 shrink-0 object-contain ml-6" />
-            <p className="text-lg md:text-lg font-sora font-bold text-[#1F2937] leading-tight ml-6">
-              Start Your Project Coordination with Swifterz
-            </p>
-          </div>
+          <img src={CustomerServiceIcon} alt="Customer Service" className="w-14 h-14 shrink-0 object-contain" />
           
+          <p className="text-lg md:text-lg font-sora font-bold text-[#1F2937] leading-tight text-center flex-1 px-4">
+            Start Your Project Coordination with Swifterz
+          </p>
+
           <a href="https://swifterz.ae/book-a-consultation" target="_blank" rel="noopener noreferrer">
             <button className="bg-[#926B15] text-white px-10 py-3 rounded-md font-sora font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap">
               Consult For FREE
